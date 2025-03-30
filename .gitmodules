@@ -1,4 +1,4 @@
-[submodule "gh-pages"]
-	path = gh-pages
-	url = https://github.com/AoEiuV020/f-droid-repo.git
+[submodule "fdroid"]
+	path = fdroid
+	url = https://github.com/.git
 	branch = gh-pages

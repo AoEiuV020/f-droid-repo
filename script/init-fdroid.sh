@@ -1,10 +1,9 @@
 #!/bin/bash
 
-cd "$(dirname "$(dirname "$0")")" || exit 1
-# 定义变量
-REPO_ROOT="$(pwd)"
-SCRIPT_DIR="$REPO_ROOT/script"
-GH_PAGES_DIR="$REPO_ROOT/gh-pages"
+# 定义变量，
+source "$(dirname "$0")/config.sh"
+
+cd "$REPO_ROOT" || exit 1
 
 # 检查当前目录是否是仓库根目录
 if [ ! -d "$REPO_ROOT/.git" ]; then
@@ -12,15 +11,8 @@ if [ ! -d "$REPO_ROOT/.git" ]; then
   exit 1
 fi
 
-# 检查fdroid命令是否存在
-if command -v fdroid >/dev/null 2>&1; then
-  FDROID_CMD="fdroid"
-else
-  FDROID_CMD="$SCRIPT_DIR/fdroid-docker.sh"
-fi
-
-# 进入gh-pages目录
-cd "$GH_PAGES_DIR" || exit 1
+# 进入F-Droid目录
+cd "$FDROID_ROOT" || exit 1
 
 # 删除config.yml和keystore.p12文件（如果存在）
 echo "正在删除旧的配置文件..."

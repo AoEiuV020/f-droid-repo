@@ -1,11 +1,7 @@
 #!/bin/bash
 
-cd "$(dirname "$(dirname "$0")")" || exit 1
-# 定义变量
-REPO_ROOT="$(pwd)"
-
-# 回到执行脚本的目录，
-cd -
+# 定义变量，
+source "$(dirname "$0")/config.sh"
 
 # 检查当前目录是否是仓库根目录
 if [ ! -d "$REPO_ROOT/.git" ]; then
@@ -16,7 +12,7 @@ fi
 # 运行docker命令
 echo "正在运行F-Droid..."
 # 这里不能-u指定用户，会导致HOME变化导致fdroid内部报git错误，
-docker run --rm -v $(pwd):/repo registry.gitlab.com/fdroid/docker-executable-fdroidserver:master "$@"
+docker run --rm -v $(pwd):/repo ${FDROID_DOCKER_IMAGE} "$@"
 
 if [ $? -eq 0 ]; then
   echo "F-Droid运行完成"
