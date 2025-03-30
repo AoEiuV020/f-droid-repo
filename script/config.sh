@@ -18,9 +18,6 @@ FDROID_DIR="fdroid"
 # F-Droid仓库位置
 FDROID_ROOT="${REPO_ROOT}/${FDROID_DIR}"
 
-# GitHub URL
-GITHUB_URL="https://github.com/${GITHUB_REPO}.git"
-
 # F-Droid Docker镜像
 FDROID_DOCKER_IMAGE="registry.gitlab.com/fdroid/docker-executable-fdroidserver:master"
 

@@ -5,6 +5,7 @@ cd "$(dirname "$(dirname "$0")")" || exit 1
 # 定义变量，
 source "$(dirname "$0")/config.sh"
 GITHUB_REPO="$1"
+GITHUB_URL="https://github.com/${GITHUB_REPO}.git"
 
 cd "$REPO_ROOT" || exit 1
 
