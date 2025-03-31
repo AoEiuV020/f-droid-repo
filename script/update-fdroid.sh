@@ -1,19 +1,18 @@
 #!/bin/bash
 
-# 定义变量
+# 导入配置
 source "$(dirname "$0")/config.sh"
 
 # 进入F-Droid目录
 cd "$FDROID_ROOT" || exit 1
 
-# 执行fdroid命令更新仓库
-echo "正在更新F-Droid仓库..."
-$FDROID_CMD update -c
+# 执行fdroid更新命令
+echo "正在执行F-Droid更新..."
+$FDROID_CMD update --create-metadata --pretty --use-date-from-apk --rename-apks --clean
 
 if [ $? -ne 0 ]; then
-  echo "错误: F-Droid仓库更新失败"
+  echo "错误: F-Droid更新失败"
   exit 1
 fi
 
-echo "F-Droid仓库更新完成"
-echo "操作完成"
+echo "F-Droid更新完成"

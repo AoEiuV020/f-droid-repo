@@ -38,7 +38,7 @@ cd "$FDROID_ROOT" || exit 1
 
 # 执行fdroid命令处理APK
 echo "正在处理APK..."
-$FDROID_CMD update -c
+"$SCRIPT_DIR/update-fdroid.sh"
 
 if [ $? -ne 0 ]; then
   echo "错误: F-Droid处理APK失败"
