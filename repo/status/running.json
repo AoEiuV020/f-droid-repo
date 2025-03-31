@@ -1,1 +1,56 @@
-{"/etc/issue.net":"Debian GNU/Linux 12","antiFeatures":{},"apksigner":"/usr/bin/apksigner","archivePolicy0":[],"commandLine":["/home/vagrant/fdroidserver/fdroid update","-c"],"disabled":[],"endTimestamp":1743363407286,"failedBuilds":{},"fdroiddata":{"commitId":"d18ed23a37a6f0a4e2300367dd0c9cbd71bd20b8","isDirty":true,"modifiedFiles":["repo/entry.jar","repo/entry.json","repo/index-v1.jar","repo/index-v1.json","repo/index-v2.json","repo/index.html","repo/index.jar","repo/index.xml","repo/status/running.json"],"untrackedFiles":["metadata/info.zwanenburg.caffeinetile.yml","repo/diff/1743363336000.json","repo/info.zwanenburg.caffeinetile_4.apk","tmp/apkcache.json","tmp/repo_1743363400000.json"]},"fdroidserver":{"commitId":"ef4bbe461246ceda12a8952a669014134f5885d9","isDirty":false,"modifiedFiles":[],"untrackedFiles":[]},"jarsigner":"/usr/lib/jvm/java-17-openjdk-amd64/bin/jarsigner","keytool":"/usr/lib/jvm/java-17-openjdk-amd64/bin/keytool","needsUpdate":["info.zwanenburg.caffeinetile"],"noPackages":["info.zwanenburg.caffeinetile"],"noUpdateCheck":["info.zwanenburg.caffeinetile"],"startTimestamp":1743363399000,"subcommand":"update"}
+{
+  "/etc/issue.net": "Debian GNU/Linux 12",
+  "antiFeatures": {},
+  "apksigner": "/usr/bin/apksigner",
+  "archivePolicy0": [],
+  "commandLine": [
+    "/home/vagrant/fdroidserver/fdroid update",
+    "--create-metadata",
+    "--pretty",
+    "--use-date-from-apk",
+    "--rename-apks",
+    "--clean"
+  ],
+  "disabled": [],
+  "endTimestamp": 1743392917702,
+  "failedBuilds": {},
+  "fdroiddata": {
+    "commitId": "fe1196b09224cffcab8ea48ceee5dd65f666f336",
+    "isDirty": true,
+    "modifiedFiles": [
+      "repo/diff/1743363336000.json",
+      "repo/entry.jar",
+      "repo/entry.json",
+      "repo/index-v1.jar",
+      "repo/index-v1.json",
+      "repo/index-v2.json",
+      "repo/index.jar",
+      "repo/index.xml",
+      "repo/status/running.json",
+      "tmp/apkcache.json"
+    ],
+    "untrackedFiles": [
+      "repo/diff/1743363400000.json",
+      "tmp/repo_1743392911000.json"
+    ]
+  },
+  "fdroidserver": {
+    "commitId": "ef4bbe461246ceda12a8952a669014134f5885d9",
+    "isDirty": false,
+    "modifiedFiles": [],
+    "untrackedFiles": []
+  },
+  "jarsigner": "/usr/lib/jvm/java-17-openjdk-amd64/bin/jarsigner",
+  "keytool": "/usr/lib/jvm/java-17-openjdk-amd64/bin/keytool",
+  "needsUpdate": [
+    "info.zwanenburg.caffeinetile"
+  ],
+  "noPackages": [
+    "info.zwanenburg.caffeinetile"
+  ],
+  "noUpdateCheck": [
+    "info.zwanenburg.caffeinetile"
+  ],
+  "startTimestamp": 1743392910000,
+  "subcommand": "update"
+}
