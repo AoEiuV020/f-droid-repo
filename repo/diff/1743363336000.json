@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1743392911000,
+    "timestamp": 1743444315000,
     "categories": {
       "repo": {
         "name": {
@@ -10,6 +10,53 @@
     }
   },
   "packages": {
+    "com.aoeiuv020.kotlindemo": {
+      "metadata": {
+        "added": 1743441428000,
+        "categories": [
+          "repo"
+        ],
+        "lastUpdated": 1743441428000,
+        "name": {
+          "en-US": "ModulesDemo"
+        },
+        "preferredSigner": "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888"
+      },
+      "versions": {
+        "da5d1e99551c35e1bf9c33a5447c2c7a2663da251db5d93bbbb8dddfa08c3721": {
+          "added": 1743441428000,
+          "file": {
+            "name": "/com.aoeiuv020.kotlindemo_1.apk",
+            "sha256": "da5d1e99551c35e1bf9c33a5447c2c7a2663da251db5d93bbbb8dddfa08c3721",
+            "size": 2815053
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.0",
+            "versionCode": 1,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "com.aoeiuv020.kotlindemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    },
     "info.zwanenburg.caffeinetile": {
       "metadata": {
         "added": 1743363400000,

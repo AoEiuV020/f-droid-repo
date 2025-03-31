@@ -1,6 +1,38 @@
 {
   "METADATA_VERSION": 20002,
   "allow_disabled_algorithms": false,
+  "com.aoeiuv020.kotlindemo_1.apk": {
+    "hash": "da5d1e99551c35e1bf9c33a5447c2c7a2663da251db5d93bbbb8dddfa08c3721",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "com.aoeiuv020.kotlindemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.aoeiuv020.kotlindemo",
+    "versionCode": 1,
+    "name": "ModulesDemo",
+    "versionName": "1.0",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 34,
+    "nativecode": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "sig": "21e5f4d4b961d798a97a0ff587331102",
+    "signer": "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888",
+    "size": 2815053,
+    "apkName": "com.aoeiuv020.kotlindemo_1.apk",
+    "added": 1743441428.951274
+  },
   "info.zwanenburg.caffeinetile_4.apk": {
     "hash": "dbbdd7deadb038862f426b71efe4a64df8c3edf25d669e935f349510e16f65db",
     "hashType": "sha256",

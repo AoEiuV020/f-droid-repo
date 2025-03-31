@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1743392911000,
+    "timestamp": 1743444315000,
     "version": 20002,
     "name": "AoEiuV020",
     "icon": "icon.png",
@@ -22,9 +22,48 @@
       "added": 1743363400000,
       "packageName": "info.zwanenburg.caffeinetile",
       "lastUpdated": 1743363400000
+    },
+    {
+      "categories": [
+        "repo"
+      ],
+      "suggestedVersionCode": "2147483647",
+      "license": "Unknown",
+      "name": "ModulesDemo",
+      "added": 1743441428000,
+      "packageName": "com.aoeiuv020.kotlindemo",
+      "lastUpdated": 1743441428000
     }
   ],
   "packages": {
+    "com.aoeiuv020.kotlindemo": [
+      {
+        "added": 1743441428000,
+        "apkName": "com.aoeiuv020.kotlindemo_1.apk",
+        "hash": "da5d1e99551c35e1bf9c33a5447c2c7a2663da251db5d93bbbb8dddfa08c3721",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "com.aoeiuv020.kotlindemo",
+        "sig": "21e5f4d4b961d798a97a0ff587331102",
+        "signer": "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888",
+        "size": 2815053,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "com.aoeiuv020.kotlindemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1,
+        "versionName": "1.0"
+      }
+    ],
     "info.zwanenburg.caffeinetile": [
       {
         "added": 1743363400000,
