@@ -6,7 +6,7 @@ source "$(dirname "$0")/config.sh"
 # 运行docker命令
 echo "正在运行F-Droid..."
 # 这里不能-u指定用户，会导致HOME变化导致fdroid内部报git错误，
-docker run --rm -v $(pwd):/repo ${FDROID_DOCKER_IMAGE} "$@"
+docker run --rm -v $(pwd):/repo --entrypoint /home/vagrant/fdroidserver/fdroid $(docker build -q $REPO_ROOT/actions/push-fdroid) "$@"
 
 if [ $? -eq 0 ]; then
   echo "F-Droid运行完成"

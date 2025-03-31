@@ -22,14 +22,9 @@ echo "目标仓库: $TARGET_REPO"
 echo "分支: $BRANCH"
 echo "GitHub Token: ***"
 
-# 安装fdroidserver
-echo "正在安装fdroidserver..."
-apt-get update -y
-apt-get install -y fdroidserver
-
-# 检查fdroidserver是否安装成功
-if ! command -v fdroid &> /dev/null; then
-    echo "错误: fdroidserver安装失败"
+FDROID_CMD=${FDROID_CMD:-/home/vagrant/fdroidserver/fdroid}
+if ! command -v $FDROID_CMD &> /dev/null; then
+    echo "错误: fdroidserver未安装"
     exit 1
 fi
 
@@ -61,7 +56,7 @@ git config --global user.email "github-actions[bot]@users.noreply.github.com"
 
 # 运行fdroid update命令
 echo "正在运行fdroid update命令..."
-fdroid update --create-metadata --pretty --use-date-from-apk --rename-apks --clean
+$FDROID_CMD update --create-metadata --pretty --use-date-from-apk --rename-apks --clean
 
 # 提交并推送更改
 echo "正在提交并推送更改..."

@@ -18,9 +18,6 @@ FDROID_DIR="fdroid"
 # F-Droid仓库位置
 FDROID_ROOT="${REPO_ROOT}/${FDROID_DIR}"
 
-# F-Droid Docker镜像
-FDROID_DOCKER_IMAGE="registry.gitlab.com/fdroid/docker-executable-fdroidserver:master"
-
 # 检查fdroid命令是否存在
 if command -v fdroid >/dev/null 2>&1; then
   FDROID_CMD="fdroid"

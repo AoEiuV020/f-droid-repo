@@ -15,8 +15,13 @@ inputs:
     description: "GitHub Token，用于克隆和推送到仓库"
     required: true
 runs:
-  using: "composite"
-  steps:
-    - name: "推送APK到F-Droid仓库"
-      run: $GITHUB_ACTION_PATH/action.sh "${{ inputs.apk-path }}" "${{ inputs.target-repo }}" "${{ inputs.branch }}" "${{ inputs.github-token }}"
-      shell: bash
+  using: docker
+  image: Dockerfile
+  args:
+    - '${{ inputs.apk-path }}'
+    - '${{ inputs.target-repo }}'
+    - '${{ inputs.branch }}'
+    - '${{ inputs.github-token }}'
+branding:
+  icon: git-commit
+  color: green
