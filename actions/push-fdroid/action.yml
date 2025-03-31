@@ -1,0 +1,22 @@
+name: "push-fdroid"
+description: "将APK文件推送到F-Droid仓库"
+inputs:
+  apk-path:
+    description: "APK文件的路径"
+    required: true
+  target-repo:
+    description: "目标F-Droid仓库（格式：用户名/仓库名）"
+    required: true
+  branch:
+    description: "仓库分支，通常为gh-pages"
+    required: false
+    default: "gh-pages"
+  github-token:
+    description: "GitHub Token，用于克隆和推送到仓库"
+    required: true
+runs:
+  using: "composite"
+  steps:
+    - name: "推送APK到F-Droid仓库"
+      run: $GITHUB_ACTION_PATH/action.sh "${{ inputs.apk-path }}" "${{ inputs.target-repo }}" "${{ inputs.branch }}" "${{ inputs.github-token }}"
+      shell: bash
