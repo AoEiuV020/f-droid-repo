@@ -4,7 +4,7 @@
   "apksigner": "/usr/bin/apksigner",
   "archivePolicy0": [],
   "commandLine": [
-    "/home/vagrant/fdroidserver/fdroid update",
+    "/usr/local/bin/fdroid update",
     "--create-metadata",
     "--pretty",
     "--use-date-from-apk",
@@ -12,40 +12,32 @@
     "--clean"
   ],
   "disabled": [],
-  "endTimestamp": 1743444321591,
+  "endTimestamp": 1743475551472,
   "failedBuilds": {},
   "fdroiddata": {
-    "commitId": "4874793cdb32a5d1e8b0f2d9879b0e4da5f5dd4b",
+    "commitId": "0897dccd5c60ec0870b385532235fefb7874a4bb",
     "isDirty": true,
     "modifiedFiles": [
       "repo/diff/1743363336000.json",
       "repo/diff/1743363400000.json",
+      "repo/diff/1743392911000.json",
       "repo/entry.jar",
       "repo/entry.json",
       "repo/index-v1.jar",
       "repo/index-v1.json",
       "repo/index-v2.json",
-      "repo/index.html",
       "repo/index.jar",
       "repo/index.xml",
       "repo/status/running.json",
       "tmp/apkcache.json"
     ],
     "untrackedFiles": [
-      "metadata/com.aoeiuv020.kotlindemo.yml",
-      "repo/com.aoeiuv020.kotlindemo_1.apk",
-      "repo/diff/1743392911000.json",
-      "tmp/repo_1743444315000.json"
+      "repo/diff/1743444315000.json",
+      "tmp/repo_1743475544000.json"
     ]
   },
-  "fdroidserver": {
-    "commitId": "ef4bbe461246ceda12a8952a669014134f5885d9",
-    "isDirty": false,
-    "modifiedFiles": [],
-    "untrackedFiles": []
-  },
-  "jarsigner": "/usr/lib/jvm/java-17-openjdk-amd64/bin/jarsigner",
-  "keytool": "/usr/lib/jvm/java-17-openjdk-amd64/bin/keytool",
+  "jarsigner": "/usr/local/openjdk-25/bin/jarsigner",
+  "keytool": "/usr/local/openjdk-25/bin/keytool",
   "needsUpdate": [
     "com.aoeiuv020.kotlindemo",
     "info.zwanenburg.caffeinetile"
@@ -58,6 +50,6 @@
     "com.aoeiuv020.kotlindemo",
     "info.zwanenburg.caffeinetile"
   ],
-  "startTimestamp": 1743444312000,
+  "startTimestamp": 1743475542000,
   "subcommand": "update"
 }
