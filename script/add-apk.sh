@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# 定义变量
+# 导入配置
 source "$(dirname "$0")/config.sh"
 
 # 检查参数
@@ -13,18 +13,16 @@ fi
 # 获取APK下载地址
 APK_URL="$1"
 
-# 从URL中提取文件名
-APK_FILENAME=$(basename "$APK_URL")
-
 # 进入F-Droid目录
 cd "$FDROID_ROOT" || exit 1
 
 # 下载APK到repo目录
-echo "正在下载APK: $APK_FILENAME..."
+echo "正在下载APK..."
 mkdir -p "$FDROID_ROOT/repo"
 cd "$FDROID_ROOT/repo" || exit 1
 
-curl -L -o "$APK_FILENAME" "$APK_URL"
+# 使用curl -O下载，并通过-w获取实际下载的文件名
+APK_FILENAME=$(curl -LOJw '%{filename_effective}' "$APK_URL")
 
 if [ $? -ne 0 ]; then
   echo "错误: APK下载失败"
