@@ -22,7 +22,7 @@ echo "目标仓库: $TARGET_REPO"
 echo "分支: $BRANCH"
 echo "GitHub Token: ***"
 
-FDROID_CMD=${FDROID_CMD:-/home/vagrant/fdroidserver/fdroid}
+FDROID_CMD=${FDROID_CMD:-fdroid}
 if ! command -v $FDROID_CMD &> /dev/null; then
     echo "错误: fdroidserver未安装"
     exit 1
