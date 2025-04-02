@@ -1,5 +1,81 @@
 {
   "repo": {
-    "timestamp": 1743475544000
+    "timestamp": 1743579574000
+  },
+  "packages": {
+    "com.predidit.kazumi": {
+      "metadata": {
+        "added": 1743579562000,
+        "categories": [
+          "repo"
+        ],
+        "lastUpdated": 1743579562000,
+        "name": {
+          "en-US": "Kazumi"
+        },
+        "preferredSigner": "f4633dcf19ca0ccac7e730c57124a7acca57ce52b87913f9620d6bb718551d98"
+      },
+      "versions": {
+        "4ab9585f9bc50f1e22b73c783f36e03dff5d191a0263b9a3a94bee894beaf73b": {
+          "added": 1743579562000,
+          "file": {
+            "name": "/com.predidit.kazumi_106032.apk",
+            "sha256": "4ab9585f9bc50f1e22b73c783f36e03dff5d191a0263b9a3a94bee894beaf73b",
+            "size": 19792314
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a"
+            ],
+            "versionName": "1.6.3",
+            "versionCode": 106032,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 35
+            },
+            "signer": {
+              "sha256": [
+                "f4633dcf19ca0ccac7e730c57124a7acca57ce52b87913f9620d6bb718551d98"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.INTERNET"
+              },
+              {
+                "name": "android.permission.READ_MEDIA_IMAGES"
+              },
+              {
+                "name": "android.permission.ACCESS_WIFI_STATE"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "android.permission.READ_MEDIA_AUDIO"
+              },
+              {
+                "name": "android.permission.READ_MEDIA_VIDEO"
+              },
+              {
+                "name": "com.predidit.kazumi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    }
   }
 }

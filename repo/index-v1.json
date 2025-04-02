@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1743475544000,
+    "timestamp": 1743579574000,
     "version": 20002,
     "name": "AoEiuV020",
     "icon": "icon.png",
@@ -22,6 +22,17 @@
       "added": 1743363400000,
       "packageName": "info.zwanenburg.caffeinetile",
       "lastUpdated": 1743363400000
+    },
+    {
+      "categories": [
+        "repo"
+      ],
+      "suggestedVersionCode": "2147483647",
+      "license": "Unknown",
+      "name": "Kazumi",
+      "added": 1743579562000,
+      "packageName": "com.predidit.kazumi",
+      "lastUpdated": 1743579562000
     },
     {
       "categories": [
@@ -62,6 +73,71 @@
         ],
         "versionCode": 1,
         "versionName": "1.0"
+      }
+    ],
+    "com.predidit.kazumi": [
+      {
+        "added": 1743579562000,
+        "apkName": "com.predidit.kazumi_106032.apk",
+        "hash": "4ab9585f9bc50f1e22b73c783f36e03dff5d191a0263b9a3a94bee894beaf73b",
+        "hashType": "sha256",
+        "minSdkVersion": 21,
+        "nativecode": [
+          "arm64-v8a"
+        ],
+        "packageName": "com.predidit.kazumi",
+        "sig": "2dcebd316639ab4dfe8b19acbcd4f810",
+        "signer": "f4633dcf19ca0ccac7e730c57124a7acca57ce52b87913f9620d6bb718551d98",
+        "size": 19792314,
+        "targetSdkVersion": 35,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.READ_MEDIA_IMAGES",
+            null
+          ],
+          [
+            "android.permission.ACCESS_WIFI_STATE",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.READ_EXTERNAL_STORAGE",
+            null
+          ],
+          [
+            "android.permission.WRITE_EXTERNAL_STORAGE",
+            null
+          ],
+          [
+            "android.permission.WAKE_LOCK",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "android.permission.READ_MEDIA_AUDIO",
+            null
+          ],
+          [
+            "android.permission.READ_MEDIA_VIDEO",
+            null
+          ],
+          [
+            "com.predidit.kazumi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 106032,
+        "versionName": "1.6.3"
       }
     ],
     "info.zwanenburg.caffeinetile": [
