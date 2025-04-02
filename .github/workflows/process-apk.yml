@@ -9,6 +9,8 @@ on:
 jobs:
   process-apk:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -29,11 +31,30 @@ jobs:
           git submodule init fdroid
           git submodule update fdroid
 
+      - name: Create log directory
+        run: mkdir -p log
+
       - name: Process APK directory
-        run: ./script/process-apk-dir.sh
+        run: |
+          ./script/process-apk-dir.sh 2>&1 | tee "log/process-apk_${GITHUB_RUN_ID}_${GITHUB_RUN_NUMBER}.log"
+        continue-on-error: true
+        id: process_apk
+
+      - name: Update F-Droid repository
+        if: steps.process_apk.outcome == 'success'
+        run: ./script/update-fdroid.sh
 
       - name: Commit changes
+        if: steps.process_apk.outcome == 'success'
         run: ./script/commit-fdroid.sh
 
       - name: Push changes
+        if: steps.process_apk.outcome == 'success'
         run: ./script/push-fdroid.sh
+
+      - name: Upload process logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: process-logs
+          path: log/

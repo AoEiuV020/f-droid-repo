@@ -48,14 +48,9 @@ for file in "$REPO_ROOT/apk"/*; do
 done
 
 if [ $processed_files -gt 0 ]; then
-    echo "开始更新F-Droid仓库"
-    "$SCRIPT_DIR/update-fdroid.sh"
-
-    cd "$REPO_ROOT" || exit 1
-    echo "提交变更到Git"
-    git add apk/
-    git commit -m "feat: add new apks to f-droid repo"
     echo "完成处理，共处理 $processed_files 个文件"
+    exit 0
 else
     echo "无文件需要处理"
+    exit 1
 fi
