@@ -12,16 +12,17 @@
     "--clean"
   ],
   "disabled": [],
-  "endTimestamp": 1743579577951,
+  "endTimestamp": 1743580404746,
   "failedBuilds": {},
   "fdroiddata": {
-    "commitId": "536ca7c2c38212f53e9144af78ba7ab435d8ff8f",
+    "commitId": "2b0f0e569703b29a90f05002c92b4c203a9eac84",
     "isDirty": true,
     "modifiedFiles": [
       "repo/diff/1743363336000.json",
       "repo/diff/1743363400000.json",
       "repo/diff/1743392911000.json",
       "repo/diff/1743444315000.json",
+      "repo/diff/1743475544000.json",
       "repo/entry.jar",
       "repo/entry.json",
       "repo/index-v1.jar",
@@ -29,35 +30,37 @@
       "repo/index-v2.json",
       "repo/index.html",
       "repo/index.jar",
-      "repo/index.png",
       "repo/index.xml",
       "repo/status/running.json",
       "tmp/apkcache.json"
     ],
     "untrackedFiles": [
-      "metadata/com.predidit.kazumi.yml",
-      "repo/com.predidit.kazumi_106032.apk",
-      "repo/diff/1743475544000.json",
-      "tmp/repo_1743579574000.json"
+      "metadata/com.aoeiuv020.flutter.demo.yml",
+      "repo/com.aoeiuv020.flutter.demo_1.apk",
+      "repo/diff/1743579574000.json",
+      "tmp/repo_1743580401000.json"
     ]
   },
   "jarsigner": "/usr/local/openjdk-25/bin/jarsigner",
   "keytool": "/usr/local/openjdk-25/bin/keytool",
   "needsUpdate": [
+    "com.aoeiuv020.flutter.demo",
     "com.aoeiuv020.kotlindemo",
     "com.predidit.kazumi",
     "info.zwanenburg.caffeinetile"
   ],
   "noPackages": [
+    "com.aoeiuv020.flutter.demo",
     "com.aoeiuv020.kotlindemo",
     "com.predidit.kazumi",
     "info.zwanenburg.caffeinetile"
   ],
   "noUpdateCheck": [
+    "com.aoeiuv020.flutter.demo",
     "com.aoeiuv020.kotlindemo",
     "com.predidit.kazumi",
     "info.zwanenburg.caffeinetile"
   ],
-  "startTimestamp": 1743579573000,
+  "startTimestamp": 1743580399000,
   "subcommand": "update"
 }

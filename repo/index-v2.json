@@ -14,7 +14,7 @@
       }
     },
     "address": "https://AoEiuV020.github.io/f-droid-repo/repo",
-    "timestamp": 1743579574000,
+    "timestamp": 1743580401000,
     "categories": {
       "repo": {
         "name": {
@@ -24,6 +24,50 @@
     }
   },
   "packages": {
+    "com.aoeiuv020.flutter.demo": {
+      "metadata": {
+        "added": 1743580388000,
+        "categories": [
+          "repo"
+        ],
+        "lastUpdated": 1743580388000,
+        "name": {
+          "en-US": "demo"
+        },
+        "preferredSigner": "f89a6243198fb7ee3fb3973400d399cdf45e4acae70bd3820fff90b4072d8c84"
+      },
+      "versions": {
+        "23f6dc3c306d8149b209c7ded119b2fe2c0d4e5a850979007ba9af393eccebed": {
+          "added": 1743580388000,
+          "file": {
+            "name": "/com.aoeiuv020.flutter.demo_1.apk",
+            "sha256": "23f6dc3c306d8149b209c7ded119b2fe2c0d4e5a850979007ba9af393eccebed",
+            "size": 6758694
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a"
+            ],
+            "versionName": "3.29.2",
+            "versionCode": 1,
+            "usesSdk": {
+              "minSdkVersion": 21,
+              "targetSdkVersion": 35
+            },
+            "signer": {
+              "sha256": [
+                "f89a6243198fb7ee3fb3973400d399cdf45e4acae70bd3820fff90b4072d8c84"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "com.aoeiuv020.flutter.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    },
     "com.aoeiuv020.kotlindemo": {
       "metadata": {
         "added": 1743441428000,

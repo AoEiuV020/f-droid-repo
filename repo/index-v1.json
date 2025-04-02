@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1743579574000,
+    "timestamp": 1743580401000,
     "version": 20002,
     "name": "AoEiuV020",
     "icon": "icon.png",
@@ -29,6 +29,17 @@
       ],
       "suggestedVersionCode": "2147483647",
       "license": "Unknown",
+      "name": "demo",
+      "added": 1743580388000,
+      "packageName": "com.aoeiuv020.flutter.demo",
+      "lastUpdated": 1743580388000
+    },
+    {
+      "categories": [
+        "repo"
+      ],
+      "suggestedVersionCode": "2147483647",
+      "license": "Unknown",
       "name": "Kazumi",
       "added": 1743579562000,
       "packageName": "com.predidit.kazumi",
@@ -47,6 +58,31 @@
     }
   ],
   "packages": {
+    "com.aoeiuv020.flutter.demo": [
+      {
+        "added": 1743580388000,
+        "apkName": "com.aoeiuv020.flutter.demo_1.apk",
+        "hash": "23f6dc3c306d8149b209c7ded119b2fe2c0d4e5a850979007ba9af393eccebed",
+        "hashType": "sha256",
+        "minSdkVersion": 21,
+        "nativecode": [
+          "arm64-v8a"
+        ],
+        "packageName": "com.aoeiuv020.flutter.demo",
+        "sig": "91d46d151b240ff48d904e72b05a73d0",
+        "signer": "f89a6243198fb7ee3fb3973400d399cdf45e4acae70bd3820fff90b4072d8c84",
+        "size": 6758694,
+        "targetSdkVersion": 35,
+        "uses-permission": [
+          [
+            "com.aoeiuv020.flutter.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1,
+        "versionName": "3.29.2"
+      }
+    ],
     "com.aoeiuv020.kotlindemo": [
       {
         "added": 1743441428000,
