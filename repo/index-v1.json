@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1743580401000,
+    "timestamp": 1743580954000,
     "version": 20002,
     "name": "AoEiuV020",
     "icon": "icon.png",
@@ -33,6 +33,17 @@
       "added": 1743580388000,
       "packageName": "com.aoeiuv020.flutter.demo",
       "lastUpdated": 1743580388000
+    },
+    {
+      "categories": [
+        "repo"
+      ],
+      "suggestedVersionCode": "2147483647",
+      "license": "Unknown",
+      "name": "FlClash",
+      "added": 1743580939000,
+      "packageName": "com.follow.clash",
+      "lastUpdated": 1743580939000
     },
     {
       "categories": [
@@ -109,6 +120,71 @@
         ],
         "versionCode": 1,
         "versionName": "1.0"
+      }
+    ],
+    "com.follow.clash": [
+      {
+        "added": 1743580939000,
+        "apkName": "com.follow.clash_202505101.apk",
+        "hash": "e69cf943cd583cbe0a820a8728634972ea60125b7e7aa8bbede978bf1cfb8c78",
+        "hashType": "sha256",
+        "minSdkVersion": 21,
+        "nativecode": [
+          "arm64-v8a"
+        ],
+        "packageName": "com.follow.clash",
+        "sig": "01d20204fe36565bf08806d0249b75a9",
+        "signer": "2859e236b6c1c6073773752678c52e8e902a9503ae9beed6729ca999c376841c",
+        "size": 39750820,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "android.permission.INTERNET",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE",
+            null
+          ],
+          [
+            "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+            null
+          ],
+          [
+            "android.permission.POST_NOTIFICATIONS",
+            null
+          ],
+          [
+            "android.permission.RECEIVE_BOOT_COMPLETED",
+            null
+          ],
+          [
+            "android.permission.ACCESS_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.CHANGE_NETWORK_STATE",
+            null
+          ],
+          [
+            "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+            null
+          ],
+          [
+            "android.permission.QUERY_ALL_PACKAGES",
+            null
+          ],
+          [
+            "android.permission.CAMERA",
+            null
+          ],
+          [
+            "com.follow.clash.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 202505101,
+        "versionName": "0.8.80"
       }
     ],
     "com.predidit.kazumi": [
