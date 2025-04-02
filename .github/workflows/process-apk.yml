@@ -1,4 +1,6 @@
 name: Process APK Updates
+env:
+    TZ: Asia/Shanghai
 
 on:
   push:
