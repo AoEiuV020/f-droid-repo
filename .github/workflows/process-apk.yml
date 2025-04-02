@@ -31,7 +31,6 @@ jobs:
       - name: Initialize submodule
         run: |
           git submodule init fdroid
-          git submodule update fdroid
 
       - name: Create log directory
         run: mkdir -p log
