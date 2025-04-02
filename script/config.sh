@@ -5,7 +5,6 @@
 
 # 仓库根目录
 # 如果REPO_ROOT已经设置，则不修改
-echo "${BASH_SOURCE[0]}"
 if [ -z "${REPO_ROOT}" ]; then
     REPO_ROOT="$(cd $(dirname "${BASH_SOURCE[0]}") && cd .. && pwd)"
 fi
