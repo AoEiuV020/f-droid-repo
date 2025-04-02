@@ -47,11 +47,11 @@ jobs:
           KEYSTORE: ${{ secrets.KEYSTORE }}
           KEYSTORE_PASS: ${{ secrets.KEYSTOREPASS }}
           KEY_PASS: ${{ secrets.KEYPASS }}
-          KEY_ALIAS: ${{ secrets.KEYALIAS }}
+          REPO_KEYALIAS: ${{ secrets.REPO_KEYALIAS }}
           KEY_DNAME: ${{ secrets.KEYDNAME }}
         run: |
           echo "$KEYSTORE" | base64 -d > fdroid/keystore.p12
-          echo "repo_keyalias: $KEY_ALIAS" >> fdroid/config.yml
+          echo "repo_keyalias: $REPO_KEYALIAS" >> fdroid/config.yml
           echo "keystore: keystore.p12" >> fdroid/config.yml
           echo "keystorepass: $KEYSTORE_PASS" >> fdroid/config.yml
           echo "keypass: $KEY_PASS" >> fdroid/config.yml
