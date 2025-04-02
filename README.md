@@ -15,7 +15,7 @@
 该命令会：
 - 初始化 gh-pages 分支
 - 创建 F-Droid 仓库基础结构
-- 生成签名密钥（会显示私钥，请保存好用于配置 CI）
+- 生成签名密钥（会显示私钥密码等，要配置到[actions密钥](https://github.com/AoEiuV020/f-droid-repo/settings/secrets/actions)）
 
 2. 初始化 GitHub Actions：
 ```bash
@@ -35,7 +35,7 @@
   with:
     apk-path: ./your-app.apk
     target-repo: AoEiuV020/f-droid-repo
-    github-token: ${{ secrets.FDROID_REPO_TOKEN }}
+    github-token: ${{ secrets.FDROID_REPO_TOKEN }} # 这个token需要拥有target-repo仓库的写入权限，
 ```
 
 ### 方式二：本地开发
@@ -69,3 +69,12 @@ script/update-fdroid.sh
 script/commit-fdroid.sh
 script/push-fdroid.sh
 ```
+
+### 方式三：手动运行 GitHub Actions
+
+1. 访问仓库的 Actions 页面：[manual-push-apk](https://github.com/AoEiuV020/f-droid-repo/actions/workflows/manual-push-apk.yml)
+2. 点击 "Run workflow" 按钮
+3. 在弹出的表单中输入 APK 下载地址
+4. 点击 "Run workflow" 确认运行
+
+workflow 会自动下载 APK 并更新 F-Droid 仓库。
