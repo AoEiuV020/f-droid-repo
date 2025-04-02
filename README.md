@@ -80,3 +80,27 @@ script/push-fdroid.sh
 4. 点击 "Run workflow" 确认运行
 
 workflow 会自动下载 APK 并更新 F-Droid 仓库。
+
+### 方式四：直接上传文件到 actions 分支
+
+1. 切换到 `actions` 分支：
+```bash
+git checkout actions
+```
+
+2. 将 APK 文件或包含 APK 下载地址的 `.txt` 文件上传到 `apk` 目录：
+```bash
+cp your-app.apk apk/
+# 或者
+echo "https://example.com/your-app.apk" > apk/your-app.txt
+```
+
+3. 提交并推送更改：
+```bash
+git add -f apk/
+git commit -m "Add APK or download link"
+git push origin actions
+```
+
+也可以直接在github网站上操作上传，[upload](https://github.com/AoEiuV020/f-droid-repo/upload/actions/apk)  
+GitHub Actions 会自动检测到新文件并更新 F-Droid 仓库。
