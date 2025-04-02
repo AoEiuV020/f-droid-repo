@@ -51,11 +51,11 @@ jobs:
           KEY_DNAME: ${{ secrets.KEYDNAME }}
         run: |
           echo "$KEYSTORE" | base64 -d > fdroid/keystore.p12
-          echo "repo_keyalias=$KEY_ALIAS" >> fdroid/config.yml
-          echo "keystore=keystore.p12" >> fdroid/config.yml
-          echo "keystorepass=$KEYSTORE_PASS" >> fdroid/config.yml
-          echo "keypass=$KEY_PASS" >> fdroid/config.yml
-          echo "keydname=$KEY_DNAME" >> fdroid/config.yml
+          echo "repo_keyalias: $KEY_ALIAS" >> fdroid/config.yml
+          echo "keystore: keystore.p12" >> fdroid/config.yml
+          echo "keystorepass: $KEYSTORE_PASS" >> fdroid/config.yml
+          echo "keypass: $KEY_PASS" >> fdroid/config.yml
+          echo "keydname: $KEY_DNAME" >> fdroid/config.yml
           ./script/update-config.sh ${GITHUB_REPOSITORY}
 
       - name: Update F-Droid repository
