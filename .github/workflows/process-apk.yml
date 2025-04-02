@@ -42,6 +42,23 @@ jobs:
         continue-on-error: true
         id: process_apk
 
+      - name: Setup F-Droid config and keystore
+        if: steps.process_apk.outcome == 'success'
+        env:
+          KEYSTORE: ${{ secrets.KEYSTORE }}
+          KEYSTORE_PASS: ${{ secrets.KEYSTOREPASS }}
+          KEY_PASS: ${{ secrets.KEYPASS }}
+          KEY_ALIAS: ${{ secrets.KEYALIAS }}
+          KEY_DNAME: ${{ secrets.KEYDNAME }}
+        run: |
+          echo "$KEYSTORE" | base64 -d > fdroid/keystore.p12
+          echo "repo_keyalias=$KEY_ALIAS" >> fdroid/config.yml
+          echo "keystore=keystore.p12" >> fdroid/config.yml
+          echo "keystorepass=$KEYSTORE_PASS" >> fdroid/config.yml
+          echo "keypass=$KEY_PASS" >> fdroid/config.yml
+          echo "keydname=$KEY_DNAME" >> fdroid/config.yml
+          ./script/update-config.sh
+
       - name: Update F-Droid repository
         if: steps.process_apk.outcome == 'success'
         run: ./script/update-fdroid.sh
