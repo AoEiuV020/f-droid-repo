@@ -1,27 +1,72 @@
 name: "push-fdroid"
-description: "将APK文件推送到F-Droid仓库"
+description: "将APK文件或下载链接推送到F-Droid仓库"
 inputs:
   apk-path:
-    description: "APK文件的路径"
+    description: "APK文件的路径或HTTP下载链接"
     required: true
   target-repo:
-    description: "目标F-Droid仓库（格式：用户名/仓库名）"
+    description: "目标仓库（格式：用户名/仓库名）"
     required: true
   branch:
-    description: "仓库分支，通常为gh-pages"
+    description: "仓库分支，默认为actions"
     required: false
-    default: "gh-pages"
+    default: "actions"
   github-token:
-    description: "GitHub Token，用于克隆和推送到仓库"
+    description: "用于访问仓库的GitHub Token"
     required: true
 runs:
-  using: docker
-  image: Dockerfile
-  args:
-    - '${{ inputs.apk-path }}'
-    - '${{ inputs.target-repo }}'
-    - '${{ inputs.branch }}'
-    - '${{ inputs.github-token }}'
+  using: "composite"
+  steps:
+    - name: Clone and push APK
+      shell: bash
+      run: |
+        # 处理APK路径或链接
+        if [[ "${{ inputs.apk-path }}" =~ ^https?:// ]]; then
+          # 是HTTP链接，准备写入txt文件
+          DOWNLOAD_LIST_FILE="apk_downloads_${GITHUB_RUN_ID}_${GITHUB_RUN_NUMBER}.txt"
+          echo "${{ inputs.apk-path }}" > "$DOWNLOAD_LIST_FILE"
+          echo "检测到HTTP链接，已保存到下载列表文件: $DOWNLOAD_LIST_FILE"
+          APK_SOURCE="$DOWNLOAD_LIST_FILE"
+        else
+          # 是本地文件，转换为绝对路径
+          if [[ "${{ inputs.apk-path }}" == /* ]]; then
+            APK_SOURCE="${{ inputs.apk-path }}"
+          else
+            APK_SOURCE="$(pwd)/${{ inputs.apk-path }}"
+          fi
+          echo "本地APK文件路径: $APK_SOURCE"
+        fi
+
+        # 克隆仓库（使用指定分支）
+        echo "正在克隆仓库..."
+        git clone --depth 1 --branch ${{ inputs.branch }} "https://${{ inputs.github-token }}@github.com/${{ inputs.target-repo }}.git" temp-repo
+        cd temp-repo
+        
+        # 如果apk目录不存在则创建
+        mkdir -p apk
+        
+        # 复制文件到apk目录
+        if [[ "${{ inputs.apk-path }}" =~ ^https?:// ]]; then
+          # 移动下载链接文件
+          mv "$APK_SOURCE" "apk/"
+        else
+          # 复制APK文件
+          cp "$APK_SOURCE" "apk/"
+        fi
+        
+        # 配置git信息
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+        
+        # 提交并推送更改
+        git add -f apk/
+        if [[ "${{ inputs.apk-path }}" =~ ^https?:// ]]; then
+          git commit -m "更新: 添加APK下载链接 $(date +%Y-%m-%d)"
+        else
+          git commit -m "更新: 添加新的APK $(date +%Y-%m-%d)"
+        fi
+        git push
+
 branding:
-  icon: git-commit
+  icon: upload
   color: green
