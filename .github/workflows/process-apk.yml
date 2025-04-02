@@ -56,7 +56,7 @@ jobs:
           echo "keystorepass=$KEYSTORE_PASS" >> fdroid/config.yml
           echo "keypass=$KEY_PASS" >> fdroid/config.yml
           echo "keydname=$KEY_DNAME" >> fdroid/config.yml
-          ./script/update-config.sh
+          ./script/update-config.sh ${GITHUB_REPOSITORY}
 
       - name: Update F-Droid repository
         if: steps.process_apk.outcome == 'success'
