@@ -21,6 +21,43 @@ runs:
     - name: Clone and push APK
       shell: bash
       run: |
+        # 首先处理APK路径或链接
+        if [[ "${{ inputs.apk-path }}" =~ ^https?:// ]]; then
+          # 是HTTP链接，稍后处理
+          IS_HTTP_LINK=1
+          APK_URL="${{ inputs.apk-path }}"
+        else
+          # 是本地文件，现在就确定绝对路径
+          IS_HTTP_LINK=0
+          if [[ "${{ inputs.apk-path }}" == /* ]]; then
+            APK_SOURCE="${{ inputs.apk-path }}"
+          else
+            # 相对路径，获取当前目录的绝对路径
+            CURRENT_DIR=$(pwd)
+            APK_SOURCE="$CURRENT_DIR/${{ inputs.apk-path }}"
+          fi
+          # 验证文件存在
+          if [ ! -f "$APK_SOURCE" ]; then
+            echo "错误：找不到APK文件：$APK_SOURCE"
+            exit 1
+          fi
+          echo "本地APK文件路径: $APK_SOURCE"
+        fi
+        
+        # 创建临时工作目录
+        TEMP_DIR=$(mktemp -d)
+        echo "创建临时目录: $TEMP_DIR"
+        
+        if [ "$IS_HTTP_LINK" = "1" ]; then
+          # 现在处理HTTP链接
+          DOWNLOAD_LIST_FILE="$TEMP_DIR/apk_downloads_${GITHUB_RUN_ID}_${GITHUB_RUN_NUMBER}.txt"
+          echo "$APK_URL" > "$DOWNLOAD_LIST_FILE"
+          echo "检测到HTTP链接，已保存到下载列表文件: $DOWNLOAD_LIST_FILE"
+          APK_SOURCE="$DOWNLOAD_LIST_FILE"
+        fi
+
+        cd "$TEMP_DIR"
+        
         # 设置目标仓库
         TARGET_REPO="${{ inputs.target-repo }}"
         if [ -z "$TARGET_REPO" ]; then
@@ -28,33 +65,16 @@ runs:
           echo "使用当前仓库: $TARGET_REPO"
         fi
 
-        # 处理APK路径或链接
-        if [[ "${{ inputs.apk-path }}" =~ ^https?:// ]]; then
-          # 是HTTP链接，准备写入txt文件
-          DOWNLOAD_LIST_FILE="apk_downloads_${GITHUB_RUN_ID}_${GITHUB_RUN_NUMBER}.txt"
-          echo "${{ inputs.apk-path }}" > "$DOWNLOAD_LIST_FILE"
-          echo "检测到HTTP链接，已保存到下载列表文件: $DOWNLOAD_LIST_FILE"
-          APK_SOURCE="$DOWNLOAD_LIST_FILE"
-        else
-          # 是本地文件，转换为绝对路径
-          if [[ "${{ inputs.apk-path }}" == /* ]]; then
-            APK_SOURCE="${{ inputs.apk-path }}"
-          else
-            APK_SOURCE="$(pwd)/${{ inputs.apk-path }}"
-          fi
-          echo "本地APK文件路径: $APK_SOURCE"
-        fi
-
         # 克隆仓库（使用指定分支）
         echo "正在克隆仓库..."
-        git clone --depth 1 --branch ${{ inputs.branch }} "https://${{ inputs.github-token }}@github.com/${TARGET_REPO}.git" temp-repo
-        cd temp-repo
+        git clone --depth 1 --branch ${{ inputs.branch }} "https://${{ inputs.github-token }}@github.com/${TARGET_REPO}.git" "$TEMP_DIR/temp-repo"
+        cd "$TEMP_DIR/temp-repo"
         
         # 如果apk目录不存在则创建
         mkdir -p apk
         
         # 复制文件到apk目录
-        if [[ "${{ inputs.apk-path }}" =~ ^https?:// ]]; then
+        if [ "$IS_HTTP_LINK" = "1" ]; then
           # 移动下载链接文件
           mv "$APK_SOURCE" "apk/"
         else
@@ -68,12 +88,16 @@ runs:
         
         # 提交并推送更改
         git add -f apk/
-        if [[ "${{ inputs.apk-path }}" =~ ^https?:// ]]; then
+        if [ "$IS_HTTP_LINK" = "1" ]; then
           git commit -m "更新: 添加APK下载链接 $(date +%Y-%m-%d)"
         else
           git commit -m "更新: 添加新的APK $(date +%Y-%m-%d)"
         fi
         git push
+
+        # 清理临时目录
+        cd /
+        rm -rf "$TEMP_DIR"
 
 branding:
   icon: upload
