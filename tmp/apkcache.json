@@ -1,6 +1,160 @@
 {
   "METADATA_VERSION": 20002,
   "allow_disabled_algorithms": false,
+  "io.nekohasekai.sfa_500.apk": {
+    "hash": "cdff07c7c49befbe0f47b4b8b9db6abc4bf5bd397f5800c44d2bfd8f128ae5ee",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        null
+      ],
+      [
+        "android.permission.CHANGE_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        null
+      ],
+      [
+        "android.permission.ACCESS_WIFI_STATE",
+        null
+      ],
+      [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        null
+      ],
+      [
+        "android.permission.ACCESS_FINE_LOCATION",
+        null
+      ],
+      [
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        null
+      ],
+      [
+        "android.permission.CAMERA",
+        null
+      ],
+      [
+        "android.permission.QUERY_ALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.WAKE_LOCK",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "io.nekohasekai.sfa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "io.nekohasekai.sfa",
+    "versionCode": 500,
+    "name": "sing-box",
+    "versionName": "1.12.0-alpha.23",
+    "minSdkVersion": 21,
+    "targetSdkVersion": 35,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "5053b0ad2ec609eec8cb45f1f92e41b9",
+    "signer": "32250a4b5f3a6733df57a3b9ec16c38d2c7fc5f2f693a9636f8f7b3be3549641",
+    "size": 16520509,
+    "apkName": "io.nekohasekai.sfa_500.apk",
+    "added": 1743583506.152992
+  },
+  "com.aoeiuv020.flutter.demo_1.apk": {
+    "hash": "23f6dc3c306d8149b209c7ded119b2fe2c0d4e5a850979007ba9af393eccebed",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "com.aoeiuv020.flutter.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.aoeiuv020.flutter.demo",
+    "versionCode": 1,
+    "name": "demo",
+    "versionName": "3.29.2",
+    "minSdkVersion": 21,
+    "targetSdkVersion": 35,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "91d46d151b240ff48d904e72b05a73d0",
+    "signer": "f89a6243198fb7ee3fb3973400d399cdf45e4acae70bd3820fff90b4072d8c84",
+    "size": 6758694,
+    "apkName": "com.aoeiuv020.flutter.demo_1.apk",
+    "added": 1743580388.0
+  },
+  "com.aoeiuv020.kotlindemo_1.apk": {
+    "hash": "da5d1e99551c35e1bf9c33a5447c2c7a2663da251db5d93bbbb8dddfa08c3721",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "com.aoeiuv020.kotlindemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.aoeiuv020.kotlindemo",
+    "versionCode": 1,
+    "name": "ModulesDemo",
+    "versionName": "1.0",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 34,
+    "nativecode": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "sig": "21e5f4d4b961d798a97a0ff587331102",
+    "signer": "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888",
+    "size": 2815053,
+    "apkName": "com.aoeiuv020.kotlindemo_1.apk",
+    "added": 1743441428.0
+  },
   "com.follow.clash_202505101.apk": {
     "hash": "e69cf943cd583cbe0a820a8728634972ea60125b7e7aa8bbede978bf1cfb8c78",
     "hashType": "sha256",
@@ -68,68 +222,7 @@
     "signer": "2859e236b6c1c6073773752678c52e8e902a9503ae9beed6729ca999c376841c",
     "size": 39750820,
     "apkName": "com.follow.clash_202505101.apk",
-    "added": 1743580939.91612
-  },
-  "com.aoeiuv020.flutter.demo_1.apk": {
-    "hash": "23f6dc3c306d8149b209c7ded119b2fe2c0d4e5a850979007ba9af393eccebed",
-    "hashType": "sha256",
-    "uses-permission": [
-      [
-        "com.aoeiuv020.flutter.demo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-        null
-      ]
-    ],
-    "uses-permission-sdk-23": [],
-    "features": [],
-    "icons_src": {},
-    "icons": {},
-    "antiFeatures": {},
-    "packageName": "com.aoeiuv020.flutter.demo",
-    "versionCode": 1,
-    "name": "demo",
-    "versionName": "3.29.2",
-    "minSdkVersion": 21,
-    "targetSdkVersion": 35,
-    "nativecode": [
-      "arm64-v8a"
-    ],
-    "sig": "91d46d151b240ff48d904e72b05a73d0",
-    "signer": "f89a6243198fb7ee3fb3973400d399cdf45e4acae70bd3820fff90b4072d8c84",
-    "size": 6758694,
-    "apkName": "com.aoeiuv020.flutter.demo_1.apk",
-    "added": 1743580388.0
-  },
-  "com.aoeiuv020.kotlindemo_1.apk": {
-    "hash": "da5d1e99551c35e1bf9c33a5447c2c7a2663da251db5d93bbbb8dddfa08c3721",
-    "hashType": "sha256",
-    "uses-permission": [
-      [
-        "com.aoeiuv020.kotlindemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-        null
-      ]
-    ],
-    "uses-permission-sdk-23": [],
-    "features": [],
-    "icons_src": {},
-    "icons": {},
-    "antiFeatures": {},
-    "packageName": "com.aoeiuv020.kotlindemo",
-    "versionCode": 1,
-    "name": "ModulesDemo",
-    "versionName": "1.0",
-    "minSdkVersion": 24,
-    "targetSdkVersion": 34,
-    "nativecode": [
-      "arm64-v8a",
-      "armeabi-v7a",
-      "x86",
-      "x86_64"
-    ],
-    "sig": "21e5f4d4b961d798a97a0ff587331102",
-    "signer": "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888",
-    "size": 2815053,
-    "apkName": "com.aoeiuv020.kotlindemo_1.apk",
-    "added": 1743441428.0
+    "added": 1743580939.0
   },
   "com.predidit.kazumi_106032.apk": {
     "hash": "4ab9585f9bc50f1e22b73c783f36e03dff5d191a0263b9a3a94bee894beaf73b",
