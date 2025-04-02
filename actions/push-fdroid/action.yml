@@ -67,6 +67,7 @@ runs:
 
         # 克隆仓库（使用指定分支）
         echo "正在克隆仓库..."
+        # 这里不能使用x-access-token，因为不是用actions自带的的token，
         git clone --depth 1 --branch ${{ inputs.branch }} "https://${{ inputs.github-token }}@github.com/${TARGET_REPO}.git" "$TEMP_DIR/temp-repo"
         cd "$TEMP_DIR/temp-repo"
         

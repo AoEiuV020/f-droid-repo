@@ -24,7 +24,8 @@ jobs:
 
       - name: Clone gh-pages branch to fdroid directory
         run: |
-          git clone --depth 1 --branch gh-pages https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git fdroid
+          # 这里必须x-access-token因为要蹭到默认token的权限，
+          git clone --depth 1 --branch gh-pages https://x-access-token:${{ github.token }}@github.com/${GITHUB_REPOSITORY}.git fdroid
         env:
           GITHUB_TOKEN: ${{ github.token }}
 
