@@ -1,0 +1,39 @@
+name: Process APK Updates
+
+on:
+  push:
+    paths:
+      - 'apk/**'
+  workflow_dispatch:  # Allow manual triggering
+
+jobs:
+  process-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Git
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Clone gh-pages branch to fdroid directory
+        run: |
+          git clone --depth 1 --branch gh-pages https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git fdroid
+        env:
+          GITHUB_TOKEN: ${{ github.token }}
+
+      - name: Initialize submodule
+        run: |
+          git submodule init fdroid
+          git submodule update fdroid
+
+      - name: Process APK directory
+        run: ./script/process-apk-dir.sh
+
+      - name: Commit changes
+        run: ./script/commit-fdroid.sh
+
+      - name: Push changes
+        run: ./script/push-fdroid.sh
