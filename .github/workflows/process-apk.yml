@@ -37,6 +37,7 @@ jobs:
 
       - name: Process APK directory
         run: |
+          set -o pipefail  # Make sure pipeline status is preserved
           ./script/process-apk-dir.sh 2>&1 | tee "log/process-apk_${GITHUB_RUN_ID}_${GITHUB_RUN_NUMBER}.log"
         continue-on-error: true
         id: process_apk
