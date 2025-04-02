@@ -1,0 +1,24 @@
+name: Manual Push APK
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk-path:
+        description: 'APK download URL'
+        required: true
+        type: string
+
+jobs:
+  push-apk:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Push APK to F-Droid repo
+        uses: ./actions/push-fdroid
+        with:
+          apk-path: ${{ github.event.inputs.apk-path }}
+          github-token: ${{ secrets.FDROID_REPO_TOKEN }}

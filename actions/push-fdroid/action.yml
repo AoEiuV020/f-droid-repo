@@ -5,8 +5,9 @@ inputs:
     description: "APK文件的路径或HTTP下载链接"
     required: true
   target-repo:
-    description: "目标仓库（格式：用户名/仓库名）"
-    required: true
+    description: "目标仓库（格式：用户名/仓库名），为空时使用当前仓库"
+    required: false
+    default: ""
   branch:
     description: "仓库分支，默认为actions"
     required: false
@@ -20,6 +21,13 @@ runs:
     - name: Clone and push APK
       shell: bash
       run: |
+        # 设置目标仓库
+        TARGET_REPO="${{ inputs.target-repo }}"
+        if [ -z "$TARGET_REPO" ]; then
+          TARGET_REPO="${GITHUB_REPOSITORY}"
+          echo "使用当前仓库: $TARGET_REPO"
+        fi
+
         # 处理APK路径或链接
         if [[ "${{ inputs.apk-path }}" =~ ^https?:// ]]; then
           # 是HTTP链接，准备写入txt文件
@@ -39,7 +47,7 @@ runs:
 
         # 克隆仓库（使用指定分支）
         echo "正在克隆仓库..."
-        git clone --depth 1 --branch ${{ inputs.branch }} "https://${{ inputs.github-token }}@github.com/${{ inputs.target-repo }}.git" temp-repo
+        git clone --depth 1 --branch ${{ inputs.branch }} "https://${{ inputs.github-token }}@github.com/${TARGET_REPO}.git" temp-repo
         cd temp-repo
         
         # 如果apk目录不存在则创建
