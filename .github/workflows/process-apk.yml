@@ -43,6 +43,11 @@ jobs:
         continue-on-error: true
         id: process_apk
 
+      - name: Commit APK and logs
+        run: |
+          git add apk/ log/
+          git commit -m "Update processing results and logs" || echo "No changes to commit"
+        
       - name: Setup F-Droid config and keystore
         if: steps.process_apk.outcome == 'success'
         env:
