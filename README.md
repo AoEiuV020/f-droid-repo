@@ -2,7 +2,7 @@
 
 用于创建和管理自己的 F-Droid 软件仓库，支持 GitHub Actions 自动化部署。
 
-<a href="https://AoEiuV020.github.io/f-droid-repo/repo"><img alt="Get it on F-Droid" src="https://f-droid.org/badge/get-it-on.svg" width="200px"/>
+<a href="https://AoEiuV020.github.io/f-droid-repo/repo"><img alt="Get it on F-Droid" src="https://f-droid.org/badge/get-it-on.svg" width="200px"></a>
 
 ## 快速开始
 
@@ -71,6 +71,8 @@ script/push-fdroid.sh
 ```
 
 ### 方式三：手动运行 GitHub Actions
+
+需要配置有写入权限的 secrets.FDROID_REPO_TOKEN 到本项目，
 
 1. 访问仓库的 Actions 页面：[manual-push-apk](https://github.com/AoEiuV020/f-droid-repo/actions/workflows/manual-push-apk.yml)
 2. 点击 "Run workflow" 按钮
