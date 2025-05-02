@@ -12,10 +12,10 @@
     "--clean"
   ],
   "disabled": [],
-  "endTimestamp": 1746209321082,
+  "endTimestamp": 1746209596125,
   "failedBuilds": {},
   "fdroiddata": {
-    "commitId": "2a675ed66329c3bc22cf192822917dfbcae3f325",
+    "commitId": "117b69db6dbcc2c443bbc342af79efaec867e4c2",
     "isDirty": true,
     "modifiedFiles": [
       "repo/diff/1743363336000.json",
@@ -27,6 +27,7 @@
       "repo/diff/1743580401000.json",
       "repo/diff/1743580954000.json",
       "repo/diff/1743583522000.json",
+      "repo/diff/1746179519000.json",
       "repo/entry.jar",
       "repo/entry.json",
       "repo/index-v1.jar",
@@ -35,12 +36,12 @@
       "repo/index.jar",
       "repo/index.xml",
       "repo/status/running.json",
-      "tmp/apkcache.json"
+      "tmp/repo_1743363336000.json"
     ],
     "untrackedFiles": [
-      "repo/diff/1746179519000.json",
-      "repo/fdroid_shizuku_privileged_extension-main-20250503020617-android.apk",
-      "tmp/repo_1746209318000.json"
+      "repo/InstallerX-main-20250503020650-android.apk",
+      "repo/diff/1746209318000.json",
+      "tmp/repo_1746209593000.json"
     ]
   },
   "jarsigner": "/usr/local/openjdk-25/bin/jarsigner",
@@ -69,6 +70,6 @@
     "info.zwanenburg.caffeinetile",
     "io.nekohasekai.sfa"
   ],
-  "startTimestamp": 1746209312000,
+  "startTimestamp": 1746209587000,
   "subcommand": "update"
 }
