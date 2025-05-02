@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1743583522000,
+    "timestamp": 1746179519000,
     "version": 20002,
     "name": "AoEiuV020",
     "icon": "icon.png",
@@ -65,7 +65,7 @@
       "name": "ModulesDemo",
       "added": 1743441428000,
       "packageName": "com.aoeiuv020.kotlindemo",
-      "lastUpdated": 1743441428000
+      "lastUpdated": 1746179499000
     },
     {
       "categories": [
@@ -106,6 +106,32 @@
       }
     ],
     "com.aoeiuv020.kotlindemo": [
+      {
+        "added": 1746179499000,
+        "apkName": "com.aoeiuv020.kotlindemo_1_21e5f4d.apk",
+        "hash": "0d70c899c0fe3de9aa0653fae43d007f4dfe214f4256ce69c42ed67c0514b1f0",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "nativecode": [
+          "arm64-v8a",
+          "armeabi-v7a",
+          "x86",
+          "x86_64"
+        ],
+        "packageName": "com.aoeiuv020.kotlindemo",
+        "sig": "21e5f4d4b961d798a97a0ff587331102",
+        "signer": "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888",
+        "size": 2815053,
+        "targetSdkVersion": 34,
+        "uses-permission": [
+          [
+            "com.aoeiuv020.kotlindemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ]
+        ],
+        "versionCode": 1,
+        "versionName": "1.0"
+      },
       {
         "added": 1743441428000,
         "apkName": "com.aoeiuv020.kotlindemo_1.apk",

@@ -12,10 +12,10 @@
     "--clean"
   ],
   "disabled": [],
-  "endTimestamp": 1743583524970,
+  "endTimestamp": 1746179522213,
   "failedBuilds": {},
   "fdroiddata": {
-    "commitId": "298db58da7f0610bc2092092b130cd15daa30550",
+    "commitId": "f79fb23107638f991d5adae0a8c9e1b9527894ce",
     "isDirty": true,
     "modifiedFiles": [
       "repo/diff/1743363336000.json",
@@ -25,22 +25,21 @@
       "repo/diff/1743475544000.json",
       "repo/diff/1743579574000.json",
       "repo/diff/1743580401000.json",
+      "repo/diff/1743580954000.json",
       "repo/entry.jar",
       "repo/entry.json",
       "repo/index-v1.jar",
       "repo/index-v1.json",
       "repo/index-v2.json",
-      "repo/index.html",
       "repo/index.jar",
       "repo/index.xml",
       "repo/status/running.json",
       "tmp/apkcache.json"
     ],
     "untrackedFiles": [
-      "metadata/io.nekohasekai.sfa.yml",
-      "repo/diff/1743580954000.json",
-      "repo/io.nekohasekai.sfa_500.apk",
-      "tmp/repo_1743583522000.json"
+      "repo/com.aoeiuv020.kotlindemo_1_21e5f4d.apk",
+      "repo/diff/1743583522000.json",
+      "tmp/repo_1746179519000.json"
     ]
   },
   "jarsigner": "/usr/local/openjdk-25/bin/jarsigner",
@@ -69,6 +68,6 @@
     "info.zwanenburg.caffeinetile",
     "io.nekohasekai.sfa"
   ],
-  "startTimestamp": 1743583517000,
+  "startTimestamp": 1746179513000,
   "subcommand": "update"
 }

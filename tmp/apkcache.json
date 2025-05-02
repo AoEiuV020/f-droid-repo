@@ -1,76 +1,12 @@
 {
   "METADATA_VERSION": 20002,
   "allow_disabled_algorithms": false,
-  "io.nekohasekai.sfa_500.apk": {
-    "hash": "cdff07c7c49befbe0f47b4b8b9db6abc4bf5bd397f5800c44d2bfd8f128ae5ee",
+  "com.aoeiuv020.kotlindemo_1_21e5f4d.apk": {
+    "hash": "0d70c899c0fe3de9aa0653fae43d007f4dfe214f4256ce69c42ed67c0514b1f0",
     "hashType": "sha256",
     "uses-permission": [
       [
-        "android.permission.INTERNET",
-        null
-      ],
-      [
-        "android.permission.FOREGROUND_SERVICE",
-        null
-      ],
-      [
-        "android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED",
-        null
-      ],
-      [
-        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
-        null
-      ],
-      [
-        "android.permission.POST_NOTIFICATIONS",
-        null
-      ],
-      [
-        "android.permission.RECEIVE_BOOT_COMPLETED",
-        null
-      ],
-      [
-        "android.permission.CHANGE_NETWORK_STATE",
-        null
-      ],
-      [
-        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
-        null
-      ],
-      [
-        "android.permission.ACCESS_WIFI_STATE",
-        null
-      ],
-      [
-        "android.permission.ACCESS_COARSE_LOCATION",
-        null
-      ],
-      [
-        "android.permission.ACCESS_FINE_LOCATION",
-        null
-      ],
-      [
-        "android.permission.ACCESS_BACKGROUND_LOCATION",
-        null
-      ],
-      [
-        "android.permission.CAMERA",
-        null
-      ],
-      [
-        "android.permission.QUERY_ALL_PACKAGES",
-        null
-      ],
-      [
-        "android.permission.WAKE_LOCK",
-        null
-      ],
-      [
-        "android.permission.ACCESS_NETWORK_STATE",
-        null
-      ],
-      [
-        "io.nekohasekai.sfa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        "com.aoeiuv020.kotlindemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
         null
       ]
     ],
@@ -79,20 +15,23 @@
     "icons_src": {},
     "icons": {},
     "antiFeatures": {},
-    "packageName": "io.nekohasekai.sfa",
-    "versionCode": 500,
-    "name": "sing-box",
-    "versionName": "1.12.0-alpha.23",
-    "minSdkVersion": 21,
-    "targetSdkVersion": 35,
+    "packageName": "com.aoeiuv020.kotlindemo",
+    "versionCode": 1,
+    "name": "ModulesDemo",
+    "versionName": "1.0",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 34,
     "nativecode": [
-      "arm64-v8a"
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
     ],
-    "sig": "5053b0ad2ec609eec8cb45f1f92e41b9",
-    "signer": "32250a4b5f3a6733df57a3b9ec16c38d2c7fc5f2f693a9636f8f7b3be3549641",
-    "size": 16520509,
-    "apkName": "io.nekohasekai.sfa_500.apk",
-    "added": 1743583506.152992
+    "sig": "21e5f4d4b961d798a97a0ff587331102",
+    "signer": "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888",
+    "size": 2815053,
+    "apkName": "com.aoeiuv020.kotlindemo_1_21e5f4d.apk",
+    "added": 1746179499.600532
   },
   "com.aoeiuv020.flutter.demo_1.apk": {
     "hash": "23f6dc3c306d8149b209c7ded119b2fe2c0d4e5a850979007ba9af393eccebed",
@@ -318,5 +257,98 @@
     "size": 11740,
     "apkName": "info.zwanenburg.caffeinetile_4.apk",
     "added": 1743363400.0
+  },
+  "io.nekohasekai.sfa_500.apk": {
+    "hash": "cdff07c7c49befbe0f47b4b8b9db6abc4bf5bd397f5800c44d2bfd8f128ae5ee",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.INTERNET",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SYSTEM_EXEMPTED",
+        null
+      ],
+      [
+        "android.permission.FOREGROUND_SERVICE_SPECIAL_USE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        null
+      ],
+      [
+        "android.permission.CHANGE_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS",
+        null
+      ],
+      [
+        "android.permission.ACCESS_WIFI_STATE",
+        null
+      ],
+      [
+        "android.permission.ACCESS_COARSE_LOCATION",
+        null
+      ],
+      [
+        "android.permission.ACCESS_FINE_LOCATION",
+        null
+      ],
+      [
+        "android.permission.ACCESS_BACKGROUND_LOCATION",
+        null
+      ],
+      [
+        "android.permission.CAMERA",
+        null
+      ],
+      [
+        "android.permission.QUERY_ALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.WAKE_LOCK",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "io.nekohasekai.sfa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "io.nekohasekai.sfa",
+    "versionCode": 500,
+    "name": "sing-box",
+    "versionName": "1.12.0-alpha.23",
+    "minSdkVersion": 21,
+    "targetSdkVersion": 35,
+    "nativecode": [
+      "arm64-v8a"
+    ],
+    "sig": "5053b0ad2ec609eec8cb45f1f92e41b9",
+    "signer": "32250a4b5f3a6733df57a3b9ec16c38d2c7fc5f2f693a9636f8f7b3be3549641",
+    "size": 16520509,
+    "apkName": "io.nekohasekai.sfa_500.apk",
+    "added": 1743583506.0
   }
 }

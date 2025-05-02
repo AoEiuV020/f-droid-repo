@@ -1,8 +1,47 @@
 {
   "repo": {
-    "timestamp": 1743583522000
+    "timestamp": 1746179519000
   },
   "packages": {
+    "com.aoeiuv020.kotlindemo": {
+      "metadata": {
+        "lastUpdated": 1746179499000
+      },
+      "versions": {
+        "0d70c899c0fe3de9aa0653fae43d007f4dfe214f4256ce69c42ed67c0514b1f0": {
+          "added": 1746179499000,
+          "file": {
+            "name": "/com.aoeiuv020.kotlindemo_1_21e5f4d.apk",
+            "sha256": "0d70c899c0fe3de9aa0653fae43d007f4dfe214f4256ce69c42ed67c0514b1f0",
+            "size": 2815053
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "1.0",
+            "versionCode": 1,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 34
+            },
+            "signer": {
+              "sha256": [
+                "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "com.aoeiuv020.kotlindemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    },
     "com.follow.clash": {
       "metadata": {
         "added": 1743580939000,
