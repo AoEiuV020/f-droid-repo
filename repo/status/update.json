@@ -12,10 +12,10 @@
     "--clean"
   ],
   "disabled": [],
-  "endTimestamp": 1746179522213,
+  "endTimestamp": 1746209321082,
   "failedBuilds": {},
   "fdroiddata": {
-    "commitId": "f79fb23107638f991d5adae0a8c9e1b9527894ce",
+    "commitId": "2a675ed66329c3bc22cf192822917dfbcae3f325",
     "isDirty": true,
     "modifiedFiles": [
       "repo/diff/1743363336000.json",
@@ -26,6 +26,7 @@
       "repo/diff/1743579574000.json",
       "repo/diff/1743580401000.json",
       "repo/diff/1743580954000.json",
+      "repo/diff/1743583522000.json",
       "repo/entry.jar",
       "repo/entry.json",
       "repo/index-v1.jar",
@@ -37,9 +38,9 @@
       "tmp/apkcache.json"
     ],
     "untrackedFiles": [
-      "repo/com.aoeiuv020.kotlindemo_1_21e5f4d.apk",
-      "repo/diff/1743583522000.json",
-      "tmp/repo_1746179519000.json"
+      "repo/diff/1746179519000.json",
+      "repo/fdroid_shizuku_privileged_extension-main-20250503020617-android.apk",
+      "tmp/repo_1746209318000.json"
     ]
   },
   "jarsigner": "/usr/local/openjdk-25/bin/jarsigner",
@@ -68,6 +69,6 @@
     "info.zwanenburg.caffeinetile",
     "io.nekohasekai.sfa"
   ],
-  "startTimestamp": 1746179513000,
+  "startTimestamp": 1746209312000,
   "subcommand": "update"
 }

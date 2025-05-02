@@ -1,38 +1,6 @@
 {
   "METADATA_VERSION": 20002,
   "allow_disabled_algorithms": false,
-  "com.aoeiuv020.kotlindemo_1_21e5f4d.apk": {
-    "hash": "0d70c899c0fe3de9aa0653fae43d007f4dfe214f4256ce69c42ed67c0514b1f0",
-    "hashType": "sha256",
-    "uses-permission": [
-      [
-        "com.aoeiuv020.kotlindemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-        null
-      ]
-    ],
-    "uses-permission-sdk-23": [],
-    "features": [],
-    "icons_src": {},
-    "icons": {},
-    "antiFeatures": {},
-    "packageName": "com.aoeiuv020.kotlindemo",
-    "versionCode": 1,
-    "name": "ModulesDemo",
-    "versionName": "1.0",
-    "minSdkVersion": 24,
-    "targetSdkVersion": 34,
-    "nativecode": [
-      "arm64-v8a",
-      "armeabi-v7a",
-      "x86",
-      "x86_64"
-    ],
-    "sig": "21e5f4d4b961d798a97a0ff587331102",
-    "signer": "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888",
-    "size": 2815053,
-    "apkName": "com.aoeiuv020.kotlindemo_1_21e5f4d.apk",
-    "added": 1746179499.600532
-  },
   "com.aoeiuv020.flutter.demo_1.apk": {
     "hash": "23f6dc3c306d8149b209c7ded119b2fe2c0d4e5a850979007ba9af393eccebed",
     "hashType": "sha256",
@@ -93,6 +61,38 @@
     "size": 2815053,
     "apkName": "com.aoeiuv020.kotlindemo_1.apk",
     "added": 1743441428.0
+  },
+  "com.aoeiuv020.kotlindemo_1_21e5f4d.apk": {
+    "hash": "0d70c899c0fe3de9aa0653fae43d007f4dfe214f4256ce69c42ed67c0514b1f0",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "com.aoeiuv020.kotlindemo.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.aoeiuv020.kotlindemo",
+    "versionCode": 1,
+    "name": "ModulesDemo",
+    "versionName": "1.0",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 34,
+    "nativecode": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "sig": "21e5f4d4b961d798a97a0ff587331102",
+    "signer": "9f683f7fa8c4039dd2d634904bcbfcb67fda4bc82f9a2fb9fd96e02189ba7888",
+    "size": 2815053,
+    "apkName": "com.aoeiuv020.kotlindemo_1_21e5f4d.apk",
+    "added": 1746179499.0
   },
   "com.follow.clash_202505101.apk": {
     "hash": "e69cf943cd583cbe0a820a8728634972ea60125b7e7aa8bbede978bf1cfb8c78",
