@@ -1,6 +1,27 @@
 {
   "repo": {
-    "timestamp": 1746209593000
+    "name": {
+      "en-US": "AoEiuV020"
+    },
+    "description": {
+      "en-US": "AoEiuV020的FDroid仓库"
+    },
+    "icon": {
+      "en-US": {
+        "name": "/icons/icon.png",
+        "sha256": "925a5939a6ef8889d1c241f12abb3c60d2c392ab0af65aeeccd36874c286dbfe",
+        "size": 847
+      }
+    },
+    "address": "https://AoEiuV020.github.io/f-droid-repo/repo",
+    "timestamp": 1746266926000,
+    "categories": {
+      "repo": {
+        "name": {
+          "en-US": "repo"
+        }
+      }
+    }
   },
   "packages": {
     "com.aoeiuv020.flutter.demo": {
@@ -274,6 +295,47 @@
         }
       }
     },
+    "info.zwanenburg.caffeinetile": {
+      "metadata": {
+        "added": 1743363400000,
+        "categories": [
+          "repo"
+        ],
+        "lastUpdated": 1743363400000,
+        "name": {
+          "en-US": "Caffeine Tile"
+        },
+        "preferredSigner": "51cfa5c8a743833ad89acf81cb755936876a5c8b8eca54d1ffdcec0cdca25d0e"
+      },
+      "versions": {
+        "dbbdd7deadb038862f426b71efe4a64df8c3edf25d669e935f349510e16f65db": {
+          "added": 1743363400000,
+          "file": {
+            "name": "/info.zwanenburg.caffeinetile_4.apk",
+            "sha256": "dbbdd7deadb038862f426b71efe4a64df8c3edf25d669e935f349510e16f65db",
+            "size": 11740
+          },
+          "manifest": {
+            "versionName": "1.3",
+            "versionCode": 4,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 25
+            },
+            "signer": {
+              "sha256": [
+                "51cfa5c8a743833ad89acf81cb755936876a5c8b8eca54d1ffdcec0cdca25d0e"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.WAKE_LOCK"
+              }
+            ]
+          }
+        }
+      }
+    },
     "io.nekohasekai.sfa": {
       "metadata": {
         "added": 1743583506000,
@@ -360,6 +422,53 @@
               },
               {
                 "name": "io.nekohasekai.sfa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "org.fdroid.fdroid.privileged": {
+      "metadata": {
+        "added": 1746266904000,
+        "categories": [
+          "repo"
+        ],
+        "lastUpdated": 1746266904000,
+        "name": {
+          "en-US": "F-Droid Shizuku Privileged Extension"
+        },
+        "preferredSigner": "02c4f7dd63d2a49bb708d6f8792da6f4d250a09feb101d2f87ab36098b1fe24b"
+      },
+      "versions": {
+        "5ede09a0f3005371fcc8e5d76092f2b743190c029546beaea42c1445937c1126": {
+          "added": 1746266904000,
+          "file": {
+            "name": "/org.fdroid.fdroid.privileged_10000.apk",
+            "sha256": "5ede09a0f3005371fcc8e5d76092f2b743190c029546beaea42c1445937c1126",
+            "size": 2653527
+          },
+          "manifest": {
+            "versionName": "cc37f0d",
+            "versionCode": 10000,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 33
+            },
+            "signer": {
+              "sha256": [
+                "02c4f7dd63d2a49bb708d6f8792da6f4d250a09feb101d2f87ab36098b1fe24b"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.QUERY_ALL_PACKAGES"
+              },
+              {
+                "name": "org.fdroid.fdroid.privileged.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              },
+              {
+                "name": "moe.shizuku.manager.permission.API_V23"
               }
             ]
           }

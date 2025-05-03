@@ -12,13 +12,12 @@
     "--clean"
   ],
   "disabled": [],
-  "endTimestamp": 1746209596125,
+  "endTimestamp": 1746266928975,
   "failedBuilds": {},
   "fdroiddata": {
-    "commitId": "117b69db6dbcc2c443bbc342af79efaec867e4c2",
+    "commitId": "1b79e667d6c0c30592e567562e252400a55370d5",
     "isDirty": true,
     "modifiedFiles": [
-      "repo/diff/1743363336000.json",
       "repo/diff/1743363400000.json",
       "repo/diff/1743392911000.json",
       "repo/diff/1743444315000.json",
@@ -28,20 +27,24 @@
       "repo/diff/1743580954000.json",
       "repo/diff/1743583522000.json",
       "repo/diff/1746179519000.json",
+      "repo/diff/1746209318000.json",
       "repo/entry.jar",
       "repo/entry.json",
       "repo/index-v1.jar",
       "repo/index-v1.json",
       "repo/index-v2.json",
+      "repo/index.html",
       "repo/index.jar",
       "repo/index.xml",
       "repo/status/running.json",
-      "tmp/repo_1743363336000.json"
+      "tmp/apkcache.json",
+      "tmp/repo_1743363400000.json"
     ],
     "untrackedFiles": [
-      "repo/InstallerX-main-20250503020650-android.apk",
-      "repo/diff/1746209318000.json",
-      "tmp/repo_1746209593000.json"
+      "metadata/org.fdroid.fdroid.privileged.yml",
+      "repo/diff/1746209593000.json",
+      "repo/org.fdroid.fdroid.privileged_10000.apk",
+      "tmp/repo_1746266926000.json"
     ]
   },
   "jarsigner": "/usr/local/openjdk-25/bin/jarsigner",
@@ -52,7 +55,8 @@
     "com.follow.clash",
     "com.predidit.kazumi",
     "info.zwanenburg.caffeinetile",
-    "io.nekohasekai.sfa"
+    "io.nekohasekai.sfa",
+    "org.fdroid.fdroid.privileged"
   ],
   "noPackages": [
     "com.aoeiuv020.flutter.demo",
@@ -60,7 +64,8 @@
     "com.follow.clash",
     "com.predidit.kazumi",
     "info.zwanenburg.caffeinetile",
-    "io.nekohasekai.sfa"
+    "io.nekohasekai.sfa",
+    "org.fdroid.fdroid.privileged"
   ],
   "noUpdateCheck": [
     "com.aoeiuv020.flutter.demo",
@@ -68,8 +73,9 @@
     "com.follow.clash",
     "com.predidit.kazumi",
     "info.zwanenburg.caffeinetile",
-    "io.nekohasekai.sfa"
+    "io.nekohasekai.sfa",
+    "org.fdroid.fdroid.privileged"
   ],
-  "startTimestamp": 1746209587000,
+  "startTimestamp": 1746266919000,
   "subcommand": "update"
 }

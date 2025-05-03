@@ -1,6 +1,6 @@
 {
   "repo": {
-    "timestamp": 1746209593000,
+    "timestamp": 1746266926000,
     "version": 20002,
     "name": "AoEiuV020",
     "icon": "icon.png",
@@ -33,6 +33,17 @@
       "added": 1743580388000,
       "packageName": "com.aoeiuv020.flutter.demo",
       "lastUpdated": 1743580388000
+    },
+    {
+      "categories": [
+        "repo"
+      ],
+      "suggestedVersionCode": "2147483647",
+      "license": "Unknown",
+      "name": "F-Droid Shizuku Privileged Extension",
+      "added": 1746266904000,
+      "packageName": "org.fdroid.fdroid.privileged",
+      "lastUpdated": 1746266904000
     },
     {
       "categories": [
@@ -398,6 +409,36 @@
         ],
         "versionCode": 500,
         "versionName": "1.12.0-alpha.23"
+      }
+    ],
+    "org.fdroid.fdroid.privileged": [
+      {
+        "added": 1746266904000,
+        "apkName": "org.fdroid.fdroid.privileged_10000.apk",
+        "hash": "5ede09a0f3005371fcc8e5d76092f2b743190c029546beaea42c1445937c1126",
+        "hashType": "sha256",
+        "minSdkVersion": 24,
+        "packageName": "org.fdroid.fdroid.privileged",
+        "sig": "c754020d1f2889b6b8e93b9efca3aee0",
+        "signer": "02c4f7dd63d2a49bb708d6f8792da6f4d250a09feb101d2f87ab36098b1fe24b",
+        "size": 2653527,
+        "targetSdkVersion": 33,
+        "uses-permission": [
+          [
+            "android.permission.QUERY_ALL_PACKAGES",
+            null
+          ],
+          [
+            "org.fdroid.fdroid.privileged.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+            null
+          ],
+          [
+            "moe.shizuku.manager.permission.API_V23",
+            null
+          ]
+        ],
+        "versionCode": 10000,
+        "versionName": "cc37f0d"
       }
     ]
   }

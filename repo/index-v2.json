@@ -14,7 +14,7 @@
       }
     },
     "address": "https://AoEiuV020.github.io/f-droid-repo/repo",
-    "timestamp": 1746209593000,
+    "timestamp": 1746266926000,
     "categories": {
       "repo": {
         "name": {
@@ -422,6 +422,53 @@
               },
               {
                 "name": "io.nekohasekai.sfa.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              }
+            ]
+          }
+        }
+      }
+    },
+    "org.fdroid.fdroid.privileged": {
+      "metadata": {
+        "added": 1746266904000,
+        "categories": [
+          "repo"
+        ],
+        "lastUpdated": 1746266904000,
+        "name": {
+          "en-US": "F-Droid Shizuku Privileged Extension"
+        },
+        "preferredSigner": "02c4f7dd63d2a49bb708d6f8792da6f4d250a09feb101d2f87ab36098b1fe24b"
+      },
+      "versions": {
+        "5ede09a0f3005371fcc8e5d76092f2b743190c029546beaea42c1445937c1126": {
+          "added": 1746266904000,
+          "file": {
+            "name": "/org.fdroid.fdroid.privileged_10000.apk",
+            "sha256": "5ede09a0f3005371fcc8e5d76092f2b743190c029546beaea42c1445937c1126",
+            "size": 2653527
+          },
+          "manifest": {
+            "versionName": "cc37f0d",
+            "versionCode": 10000,
+            "usesSdk": {
+              "minSdkVersion": 24,
+              "targetSdkVersion": 33
+            },
+            "signer": {
+              "sha256": [
+                "02c4f7dd63d2a49bb708d6f8792da6f4d250a09feb101d2f87ab36098b1fe24b"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.QUERY_ALL_PACKAGES"
+              },
+              {
+                "name": "org.fdroid.fdroid.privileged.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              },
+              {
+                "name": "moe.shizuku.manager.permission.API_V23"
               }
             ]
           }
