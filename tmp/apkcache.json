@@ -1,6 +1,86 @@
 {
   "METADATA_VERSION": 20002,
   "allow_disabled_algorithms": false,
+  "com.aoeiuv020.installer_31.apk": {
+    "hash": "3a36d9e3a739ab75e628b23367568c485e66d34ebac79517cdf0930d7831c1ca",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.FOREGROUND_SERVICE",
+        null
+      ],
+      [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.VIBRATE",
+        null
+      ],
+      [
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.MANAGE_EXTERNAL_STORAGE",
+        null
+      ],
+      [
+        "android.permission.POST_NOTIFICATIONS",
+        null
+      ],
+      [
+        "android.permission.QUERY_ALL_PACKAGES",
+        null
+      ],
+      [
+        "android.permission.WAKE_LOCK",
+        null
+      ],
+      [
+        "android.permission.ACCESS_NETWORK_STATE",
+        null
+      ],
+      [
+        "android.permission.RECEIVE_BOOT_COMPLETED",
+        null
+      ],
+      [
+        "com.aoeiuv020.installer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ],
+      [
+        "moe.shizuku.manager.permission.API_V23",
+        null
+      ],
+      [
+        "com.rosan.dhizuku.permission.API",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "com.aoeiuv020.installer",
+    "versionCode": 31,
+    "name": "InstallerX",
+    "versionName": "2.1",
+    "minSdkVersion": 34,
+    "targetSdkVersion": 35,
+    "nativecode": [
+      "arm64-v8a",
+      "armeabi-v7a",
+      "x86",
+      "x86_64"
+    ],
+    "sig": "319da7a3fdf2b8e96e03ecdaae142739",
+    "signer": "c5a9684e0b20b5463f21ee062c0f141c96cd13d01432f1c2b8476fbf60098b1c",
+    "size": 5761242,
+    "apkName": "com.aoeiuv020.installer_31.apk",
+    "added": 1746267375.995747
+  },
   "com.aoeiuv020.flutter.demo_1.apk": {
     "hash": "23f6dc3c306d8149b209c7ded119b2fe2c0d4e5a850979007ba9af393eccebed",
     "hashType": "sha256",
@@ -232,40 +312,6 @@
     "apkName": "com.predidit.kazumi_106032.apk",
     "added": 1743579562.0
   },
-  "org.fdroid.fdroid.privileged_10000.apk": {
-    "hash": "5ede09a0f3005371fcc8e5d76092f2b743190c029546beaea42c1445937c1126",
-    "hashType": "sha256",
-    "uses-permission": [
-      [
-        "android.permission.QUERY_ALL_PACKAGES",
-        null
-      ],
-      [
-        "org.fdroid.fdroid.privileged.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
-        null
-      ],
-      [
-        "moe.shizuku.manager.permission.API_V23",
-        null
-      ]
-    ],
-    "uses-permission-sdk-23": [],
-    "features": [],
-    "icons_src": {},
-    "icons": {},
-    "antiFeatures": {},
-    "packageName": "org.fdroid.fdroid.privileged",
-    "versionCode": 10000,
-    "name": "F-Droid Shizuku Privileged Extension",
-    "versionName": "cc37f0d",
-    "minSdkVersion": 24,
-    "targetSdkVersion": 33,
-    "sig": "c754020d1f2889b6b8e93b9efca3aee0",
-    "signer": "02c4f7dd63d2a49bb708d6f8792da6f4d250a09feb101d2f87ab36098b1fe24b",
-    "size": 2653527,
-    "apkName": "org.fdroid.fdroid.privileged_10000.apk",
-    "added": 1746266904.985798
-  },
   "info.zwanenburg.caffeinetile_4.apk": {
     "hash": "dbbdd7deadb038862f426b71efe4a64df8c3edf25d669e935f349510e16f65db",
     "hashType": "sha256",
@@ -384,5 +430,39 @@
     "size": 16520509,
     "apkName": "io.nekohasekai.sfa_500.apk",
     "added": 1743583506.0
+  },
+  "org.fdroid.fdroid.privileged_10000.apk": {
+    "hash": "5ede09a0f3005371fcc8e5d76092f2b743190c029546beaea42c1445937c1126",
+    "hashType": "sha256",
+    "uses-permission": [
+      [
+        "android.permission.QUERY_ALL_PACKAGES",
+        null
+      ],
+      [
+        "org.fdroid.fdroid.privileged.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION",
+        null
+      ],
+      [
+        "moe.shizuku.manager.permission.API_V23",
+        null
+      ]
+    ],
+    "uses-permission-sdk-23": [],
+    "features": [],
+    "icons_src": {},
+    "icons": {},
+    "antiFeatures": {},
+    "packageName": "org.fdroid.fdroid.privileged",
+    "versionCode": 10000,
+    "name": "F-Droid Shizuku Privileged Extension",
+    "versionName": "cc37f0d",
+    "minSdkVersion": 24,
+    "targetSdkVersion": 33,
+    "sig": "c754020d1f2889b6b8e93b9efca3aee0",
+    "signer": "02c4f7dd63d2a49bb708d6f8792da6f4d250a09feb101d2f87ab36098b1fe24b",
+    "size": 2653527,
+    "apkName": "org.fdroid.fdroid.privileged_10000.apk",
+    "added": 1746266904.0
   }
 }

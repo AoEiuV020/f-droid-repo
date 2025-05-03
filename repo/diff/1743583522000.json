@@ -1,8 +1,91 @@
 {
   "repo": {
-    "timestamp": 1746266926000
+    "timestamp": 1746267396000
   },
   "packages": {
+    "com.aoeiuv020.installer": {
+      "metadata": {
+        "added": 1746267375000,
+        "categories": [
+          "repo"
+        ],
+        "lastUpdated": 1746267375000,
+        "name": {
+          "en-US": "InstallerX"
+        },
+        "preferredSigner": "c5a9684e0b20b5463f21ee062c0f141c96cd13d01432f1c2b8476fbf60098b1c"
+      },
+      "versions": {
+        "3a36d9e3a739ab75e628b23367568c485e66d34ebac79517cdf0930d7831c1ca": {
+          "added": 1746267375000,
+          "file": {
+            "name": "/com.aoeiuv020.installer_31.apk",
+            "sha256": "3a36d9e3a739ab75e628b23367568c485e66d34ebac79517cdf0930d7831c1ca",
+            "size": 5761242
+          },
+          "manifest": {
+            "nativecode": [
+              "arm64-v8a",
+              "armeabi-v7a",
+              "x86",
+              "x86_64"
+            ],
+            "versionName": "2.1",
+            "versionCode": 31,
+            "usesSdk": {
+              "minSdkVersion": 34,
+              "targetSdkVersion": 35
+            },
+            "signer": {
+              "sha256": [
+                "c5a9684e0b20b5463f21ee062c0f141c96cd13d01432f1c2b8476fbf60098b1c"
+              ]
+            },
+            "usesPermission": [
+              {
+                "name": "android.permission.FOREGROUND_SERVICE"
+              },
+              {
+                "name": "android.permission.READ_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.VIBRATE"
+              },
+              {
+                "name": "android.permission.WRITE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.MANAGE_EXTERNAL_STORAGE"
+              },
+              {
+                "name": "android.permission.POST_NOTIFICATIONS"
+              },
+              {
+                "name": "android.permission.QUERY_ALL_PACKAGES"
+              },
+              {
+                "name": "android.permission.WAKE_LOCK"
+              },
+              {
+                "name": "android.permission.ACCESS_NETWORK_STATE"
+              },
+              {
+                "name": "android.permission.RECEIVE_BOOT_COMPLETED"
+              },
+              {
+                "name": "com.aoeiuv020.installer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+              },
+              {
+                "name": "moe.shizuku.manager.permission.API_V23"
+              },
+              {
+                "name": "com.rosan.dhizuku.permission.API"
+              }
+            ]
+          }
+        }
+      }
+    },
     "com.aoeiuv020.kotlindemo": {
       "metadata": {
         "lastUpdated": 1746179499000
